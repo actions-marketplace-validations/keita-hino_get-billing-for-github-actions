@@ -23,7 +23,7 @@ Please add to an existing workflow file with reference to the following.
         steps:
           - name: Checkout
             uses: actions/checkout@v3
-          - uses: actions/setup-node@v2
+          - uses: actions/setup-node@v3
             with:
               node-version: 18
           - name: Get billing for GitHub Actions
@@ -69,7 +69,7 @@ https://github.com/rtCamp/action-slack-notify#usage
 | Name | Description |
 |------|-------------|
 | included-minutes | The amount of free GitHub Actions minutes available |
-| total-minutes-used | EnvThe sum of the free and paid GitHub Actions minutes used |
+| total-minutes-used | The sum of the free and paid GitHub Actions minutes used |
 | usable-minutes | The value obtained by subtracting total-minutes-used from included-minutes |
 | days-left-in-billing-cycle | Numbers of days left in billing cycle |
 
